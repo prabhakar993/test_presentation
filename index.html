@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	<!-- Title-Footer plugin -->
+	<link rel="stylesheet" href="plugin/title-footer/title-footer.css">
+
+	<!-- If the query includes 'print-pdf', include the PDF print sheet
+	<script>
+		if (window.location.search.match(/print-pdf/gi)) {
+			var link = document.createElement('link');
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = 'css/print/pdf.css';
+			document.getElementsByTagName('head')[0].appendChild(link);
+		}
+	</script> -->
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>
+					heading 1
+				</h1>
+				<h2>
+					heading 2
+				</h2>
+				<h3>
+					heading 3
+				</h3>
+
+			</section>
+			<section>Slide 2</section>
+			<section data-notes="Something important">
+				<h1>slide 3</h1>
+
+				<aside class="notes">
+					Shhh, these are your private notes 📝
+				</aside>
+
+			</section>
+			<section data-visibility="uncounted">Slide 4</section>
+		</div>
+	</div>
+
+
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/title-footer/title-footer.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			slideNumber: 'c/t',
+
+			progress: true,
+
+			// showNotes: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+
+			dependencies:
+				[
+					{
+						src: 'plugin/title-footer/title-footer.js',
+						async: true,
+						callback: function () {
+							// title_footer.initialize();
+							// title:the tittle
+						}
+					}
+				]
+		});
+	</script>
+</body>
+
+</html>
