@@ -1,99 +1,329 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>prabha</title>
 
-	<title>reveal.js</title>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/prabha.css" />
 
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/white.css">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="prabha_css/prabha_mystyle.css" />
+  </head>
 
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-state="hide-menubar" style="display: flex">
+          <div style="font-size: 1.8rem; padding: 1.5vw 1.5vw">
+            Phd Registration Seminar
+          </div>
 
-	<!-- Title-Footer plugin -->
-	<link rel="stylesheet" href="plugin/title-footer/title-footer.css">
+          <div class="title-banner" style="font-size: 2rem">
+            Cavitation Bubble Dynamics Near Wettability Tailored Surfaces
+          </div>
+          <div style="font-size: 1.5rem; padding-top: 5px">by</div>
+          <div style="font-size: 1.5rem; padding-top: 5px">
+            Akurati Prabhakar
+          </div>
+          <div style="font-size: 1.5rem; padding-bottom: 0px">18NA91R01</div>
+          <div style="font-size: 1.5rem">Under the supervision of</div>
+          <div style="font-size: 1.8rem">
+            <a
+              href="https://sites.google.com/site/ritwikghoshal"
+              target="_blank"
+              style="color: black; text-decoration: none"
+              ><strong>Dr. Ritwik Ghoshal</strong></a
+            >
+          </div>
 
-	<!-- If the query includes 'print-pdf', include the PDF print sheet
-	<script>
-		if (window.location.search.match(/print-pdf/gi)) {
-			var link = document.createElement('link');
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = 'css/print/pdf.css';
-			document.getElementsByTagName('head')[0].appendChild(link);
-		}
-	</script> -->
+          <!-- <img class="logo" src="images/IIT_Kharagpur_Logo.svg" alt="IIT Kharagpur Logo"> -->
+          <!-- <div class="center-wrapper">
+					<img class="qr-code" src="https://picsum.photos/200" alt="QR Code">
+					<img class="logo" src="images/IIT_Kharagpur_Logo.svg" alt="IIT Logo">
+				</div> -->
 
-</head>
+          <div class="flex-container">
+            <div>
+              <img class="qr-code" />
+            </div>
+            <div>
+              <img
+                class="qr-code"
+                src="https://picsum.photos/200"
+                alt="QR Code"
+              />
+            </div>
+            <div>
+              <img
+                class="logo-title"
+                src="images/IIT_Kharagpur_Logo.svg"
+                alt="IIT Logo"
+              />
+            </div>
+            <div>
+              <img class="qr-code" />
+            </div>
+            <div>
+              <img class="qr-code" />
+            </div>
+          </div>
+        </section>
 
-<body>
-	<div class="reveal">
-		<div class="slides">
-			<section>
-				<h1>
-					heading 1
-				</h1>
-				<h2>
-					heading 2
-				</h2>
-				<h3>
-					heading 3
-				</h3>
+        <div class="footerbar footer-3col">
+          <div class="footer-col col-uni">IIT Kharagpur</div>
+          <div class="footer-col col-copy">&copy; 2025 Akurati Prabhakar</div>
+          <div class="footer-col col-date">June 19, 2025</div>
+        </div>
 
-			</section>
-			<section>Slide 2</section>
-			<section data-notes="Something important">
-				<h1>slide 3</h1>
+        <section
+          data-auto-animate
+          data-state="hide-menubar"
+          data-name="TOC"
+          data-sm="false"
+        >
+          <div>
+            <h2
+              style="
+                background-color: #1a237e;
+                color: white;
+                padding: 10px 20px;
+                text-align: left;
+                width: 100vw;
+              "
+            >
+              Outline
+            </h2>
+          </div>
 
-				<aside class="notes">
-					Shhh, these are your private notes 📝
-				</aside>
+          <div style="padding: 20px 20px; text-align: left; font-size: 2em">
+            <ul class="outline-list">
+              <li
+                class="fragment fade-up"
+                style="margin-top: 0px; margin-bottom: 6px"
+              >
+                <a
+                  href="#/introduction"
+                  style="color: black; text-decoration: none"
+                  >Introduction</a
+                >
+              </li>
+              <li
+                class="fragment fade-up"
+                style="margin-top: 0px; margin-bottom: 6px"
+              >
+                <a
+                  href="#/literaturereview"
+                  style="color: black; text-decoration: none"
+                >
+                  Literature Review</a
+                >
+              </li>
+              <li
+                class="fragment fade-up"
+                style="margin-top: 0px; margin-bottom: 6px"
+              >
+                <a
+                  href="#/motivations"
+                  style="color: black; text-decoration: none"
+                >
+                  Motivations</a
+                >
+              </li>
+              <li
+                class="fragment fade-up"
+                style="margin-top: 0px; margin-bottom: 6px"
+              >
+                <a
+                  href="#/objectives"
+                  style="color: black; text-decoration: none"
+                >
+                  Objectives</a
+                >
+              </li>
 
-			</section>
-			<section data-visibility="uncounted">Slide 4</section>
-		</div>
-	</div>
+              <li
+                class="fragment fade-up"
+                style="margin-top: 0px; margin-bottom: 6px"
+              >
+                <a
+                  href="#/objective1"
+                  style="color: black; text-decoration: none"
+                >
+                  Objective 1</a
+                >
+              </li>
+              <li
+                class="fragment fade-up"
+                style="margin-top: 0px; margin-bottom: 6px"
+              >
+                <a
+                  href="#/objective2"
+                  style="color: black; text-decoration: none"
+                >
+                  Objective 3</a
+                >
+              </li>
+              <li
+                class="fragment fade-up"
+                style="margin-top: 0px; margin-bottom: 6px"
+              >
+                <a
+                  href="#/objective3"
+                  style="color: black; text-decoration: none"
+                >
+                  Objective 2</a
+                >
+              </li>
+              <li
+                class="fragment fade-up"
+                style="margin-top: 0px; margin-bottom: 6px"
+              >
+                <a
+                  href="#/objective4"
+                  style="color: black; text-decoration: none"
+                >
+                  Objective 4</a
+                >
+              </li>
+              <li
+                class="fragment fade-up"
+                style="margin-top: 0px; margin-bottom: 6px"
+              >
+                <a
+                  href="#/futurework"
+                  style="color: black; text-decoration: none"
+                >
+                  Future work</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
 
+        <section data-name="Introduction" class="below-menubar">
+          <h2
+            style="
+              background-color: #1a237e;
+              color: white;
+              text-align: left;
+              padding-left: 10px;
+              width: 100vw;
+              font-size: 1em;
+            "
+          >
+            Aligned below menu
+          </h2>
 
+          <p style="text-align: left; padding-left: 10px">
+            This content is automatically pushed down.
+          </p>
+        </section>
+        <section class="below-menubar">Introduction 2</section>
 
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script src="plugin/title-footer/title-footer.js"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			hash: true,
+        <section data-name="Literature Review" class="below-menubar">
+          Literature Review
+        </section>
 
-			slideNumber: 'c/t',
+        <section class="below-menubar">Literature Review 2</section>
 
-			progress: true,
+        <section data-name="Motivations" class="below-menubar">
+          Motivations
+        </section>
 
-			// showNotes: true,
+        <section data-name="Objectives" class="below-menubar">
+          Objectives
+        </section>
 
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        <section data-name="Objective 1" class="below-menubar">
+          Objective 1
+        </section>
 
-			dependencies:
-				[
-					{
-						src: 'plugin/title-footer/title-footer.js',
-						async: true,
-						callback: function () {
-							// title_footer.initialize();
-							// title:the tittle
-						}
-					}
-				]
-		});
-	</script>
-</body>
+        <section data-name="Objective 2" class="below-menubar">
+          Objective 2
+        </section>
 
+        <section data-name="Objective 3" class="below-menubar">
+          Objective 3
+        </section>
+
+        <section data-name="Objective 4" class="below-menubar">
+          Objective 4
+        </section>
+
+        <section data-name="Future Work" class="below-menubar">
+          Future Work
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/simplemenu/simplemenu.js"></script>
+
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        center: false,
+
+        disableLayout: true,
+
+        slideNumber: "c/t",
+
+        simplemenu: {
+          scale: 0.5,
+          debug: true,
+          flat: true,
+
+          barhtml: {
+            header:
+              "<div class='menubar'><a class='logo' href='#'><img src='images/IIT_Kharagpur_Logo.svg'></a><ul class='menu'></ul><div class='slide-number'></div></div>",
+            // 				footer: `
+            //     <div class="menubar footer-3col">
+            //       <div class="footer-col col-uni">IIT Kharagpur</div>
+            //       <div class="footer-col col-copy">&copy; 2025 Akurati Prabhakar</div>
+            //       <div class="footer-col col-date">June 19, 2025</div>
+            //     </div>
+            //   `
+          },
+          csspath: "/prabha_css/simplemenu_mycustomstyle.css",
+        },
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, Simplemenu],
+      });
+    </script>
+
+    <script>
+      function adjustTopOffset() {
+        const menubar = document.querySelector(".menubar");
+        const offsetElements = document.querySelectorAll(".below-menubar");
+
+        if (menubar) {
+          const menuHeight = menubar.getBoundingClientRect().height;
+
+          offsetElements.forEach((el) => {
+            el.style.top = `${menuHeight + 1}px`; // 10px space after menu
+          });
+        }
+      }
+
+      Reveal.on("ready", adjustTopOffset);
+      Reveal.on("slidechanged", adjustTopOffset);
+      window.addEventListener("resize", adjustTopOffset);
+    </script>
+  </body>
 </html>
