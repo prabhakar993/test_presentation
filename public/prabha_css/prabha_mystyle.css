@@ -1,0 +1,131 @@
+.menubar.footer-3col {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  font-size: 14px;
+  z-index: 999;
+  /* border-top: 1px solid #ccc; */
+  padding-right: 0px;
+  font-size: 0.5em;
+  gap: 0em;
+}
+
+.footerbar.footer-3col {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  font-size: 14px;
+  /* z-index: 999; */
+  /* border-top: 1px solid #ccc; */
+  padding-right: 0px;
+  font-size: 0.5em;
+  gap: 0em;
+}
+
+.footer-col {
+  flex: 1;
+  text-align: center;
+  padding: 6px 12px;
+}
+
+/* Assign different background/text colors */
+.col-uni {
+  background-color: #191959; /* light blue */
+  color: #ffffff;
+}
+
+.col-copy {
+  background-color: #262686; /* light pink */
+  color: #ffffff;
+}
+
+.col-date {
+  background-color: #3333b2; /* light green */
+  color: #ffffff;
+}
+
+/* Outline bullets */
+.outline-list {
+  list-style-type: disc;
+  /* list-style: none; */
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  text-align: left;
+  color: #3333b2;
+  /* color: linear-gradient(to right, #000000, #ef0000); */
+  padding-left: 20px;
+}
+
+.outline-list li {
+  margin: 12px 0;
+  /* width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* display: inline-block; */
+  /* margin: 5px; */
+  /* background-image: radial-gradient(circle at center, red, yellow); */
+}
+
+.outline-list li a {
+  /* color: #ff0000; */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.outline-list li a:hover {
+  text-decoration: underline;
+}
+
+.title-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  /* gap: 8px; */
+}
+
+.title-seminar-heading {
+  grid-column: span 3 / span 3;
+}
+
+.title-seminar-title {
+  grid-column: span 3 / span 3;
+  grid-row-start: 2;
+}
+
+.title-author {
+  grid-row: span 5 / span 5;
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+.title-author-right {
+  grid-row: span 5 / span 5;
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.title-author-left {
+  grid-row: span 5 / span 5;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  /* align-content: center; */
+  align-self: self-end;
+  justify-self: self-end;
+}
+
+.topbar-title {
+  background-color: #1a237e;
+  color: white;
+  text-align: left;
+  padding-left: 10px;
+  width: 100vw;
+  font-size: 1em;
+  margin-bottom: 0px;
+}
