@@ -38,7 +38,11 @@
           </div>
         </section>
 
-        <section data-state="hide-menubar" data-name="banner-page">
+        <section
+          data-state="hide-menubar"
+          data-name="banner-page"
+          data-sm="false"
+        >
           <div class="title-parent">
             <div class="title-scrollable-content">
               <div
@@ -62,7 +66,7 @@
                   />
                 </div>
                 <div class="title-author">
-                  <div style="font-size: 1.5rem; padding-top: 5px">by</div>
+                  <div style="font-size: 1.5rem; padding: 5px">by</div>
                   <div style="font-size: 1.5rem; padding-top: 5px">
                     Akurati Prabhakar
                   </div>
@@ -78,7 +82,7 @@
                       ><strong>Dr. Ritwik Ghoshal</strong>
                     </a>
                   </div>
-                  <div>
+                  <div style="padding-top: 5px">
                     <img
                       class="logo-title"
                       src="images/IIT_Kharagpur_Logo.svg"
@@ -87,11 +91,11 @@
                   </div>
                 </div>
                 <div class="title-author-left">
-                  <img
+                  <!-- <img
                     class="qr-code"
                     src="https://picsum.photos/200"
                     alt="QR Code"
-                  />
+                  /> -->
                 </div>
               </div>
             </div>
@@ -111,17 +115,7 @@
           data-sm="false"
         >
           <div>
-            <h2
-              style="
-                background-color: #1a237e;
-                color: white;
-                padding: 10px 20px;
-                text-align: left;
-                width: 100vw;
-              "
-            >
-              Outline
-            </h2>
+            <h2 class="topbar-title" style="color: white">Outline</h2>
           </div>
 
           <div style="padding: 10px 10px; text-align: left; font-size: 2em">
@@ -236,161 +230,328 @@
           <h2 class="topbar-title" style="color: white; margin-bottom: 5px">
             Literature survey : Cavitation bubble dynamics
           </h2>
-
-          <table
-            class="fragment fade-in"
-            data-fragment-index="1"
-            style="
-              width: 98vw;
-              border-collapse: collapse;
-              font-size: clamp(0.5rem, calc(1vw + 1vh), 32px);
-              text-align: center;
-            "
-          >
-            <thead>
-              <tr style="background-color: #ffffff">
-                <th
+          <div class="flip-card">
+            <div
+              class="flip-card-inner fragment custom flip-2-hor-top-1"
+              data-fragment-index="6"
+            >
+              <div class="flip-card-front">
+                <table
                   style="
-                    border: 1px solid black;
-                    padding: 8px;
+                    width: 98vw;
+                    border-collapse: collapse;
+                    font-size: clamp(0.5rem, calc(1vw + 1vh), 32px);
                     text-align: center;
                   "
                 >
-                  Author
-                </th>
-                <th
+                  <thead>
+                    <tr style="background-color: #ffffff">
+                      <th
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Author
+                      </th>
+                      <th
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Contribution
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="fragment fade-in" data-fragment-index="1">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Rayleigh et al. (1917)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Considered the growth and
+                        <mark>
+                          collapse of a spherical bubble in an infinite fluid
+                          and showed that
+                        </mark>
+                        tremendous dynamic pressures arise during the collapse
+                        phase of the bubble’s life.
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="2">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Benjamin et al. (1966)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Recorded the asymmetric collapse of an initially
+                        spherical vapour cavity near a rigid boundary and
+                        observed that the bubble collapses with a high-speed
+                        liquid jet directed towards the fluid-structure
+                        interface.
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="3">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Gibson et al. (1968)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Conducted experiments near flexible boundaries and
+                        suggested that the physical properties of the boundary
+                        determined the direction of movement of the liquid jet
+                        during the cavitation bubble collapse phase.
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="4">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Plesset et al. (1971)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Predicted Benjamin and Ellis observations theoretically
+                        with help of finite-difference solution. These
+                        predictions are experimentally confirmed by Lauterborn
+                        and Bolle (1975).
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="5">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Chahine et al. (1977)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Carried out a theoretical and experimental study on the
+                        growth and collapse of a cavitation bubble near a free
+                        surface and suggested that when the cavitation bubble
+                        collapses at a sufficient distance away from the free
+                        surface, the free surface also grows and collapses with
+                        the bubble growth and collapse.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="flip-card-back">
+                <table
                   style="
-                    border: 1px solid black;
-                    padding: 8px;
+                    width: 98vw;
+                    border-collapse: collapse;
+                    font-size: clamp(0.5rem, calc(1vw + 1vh), 32px);
                     text-align: center;
                   "
                 >
-                  Contribution
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="fragment fade-in" data-fragment-index="2">
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Rayleigh et al. (1917)
-                </td>
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Considered the growth and collapse of a spherical bubble in an
-                  infinite fluid and showed that tremendous dynamic pressures
-                  arise during the collapse phase of the bubble’s life.
-                </td>
-              </tr>
-              <tr class="fragment fade-in" data-fragment-index="3">
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Benjamin et al. (1966)
-                </td>
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Recorded the asymmetric collapse of an initially spherical
-                  vapour cavity near a rigid boundary and observed that the
-                  bubble collapses with a high-speed liquid jet directed towards
-                  the fluid-structure interface.
-                </td>
-              </tr>
-              <tr class="fragment fade-in" data-fragment-index="4">
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Gibson et al. (1968)
-                </td>
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Conducted experiments near flexible boundaries and suggested
-                  that the physical properties of the boundary determined the
-                  direction of movement of the liquid jet during the cavitation
-                  bubble collapse phase.
-                </td>
-              </tr>
-              <tr class="fragment fade-in" data-fragment-index="5">
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Plesset et al. (1971)
-                </td>
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Predicted Benjamin and Ellis observations theoretically with
-                  help of finite-difference solution. These predictions are
-                  experimentally confirmed by Lauterborn and Bolle (1975).
-                </td>
-              </tr>
-              <tr class="fragment fade-in" data-fragment-index="6">
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Chahine et al. (1977)
-                </td>
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Carried out a theoretical and experimental study on the growth
-                  and collapse of a cavitation bubble near a free surface and
-                  suggested that when the cavitation bubble collapses at a
-                  sufficient distance away from the free surface, the free
-                  surface also grows and collapses with the bubble growth and
-                  collapse.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  <thead>
+                    <tr style="background-color: #ffffff">
+                      <th
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Author
+                      </th>
+                      <th
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Contribution
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="fragment fade-in" data-fragment-index="7">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Rayleigh et al. (1917)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Considered the growth and collapse of a spherical bubble
+                        in an infinite fluid and showed that tremendous dynamic
+                        pressures arise during the collapse phase of the
+                        bubble’s life.
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="8">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Benjamin et al. (1966)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Recorded the asymmetric collapse of an initially
+                        spherical vapour cavity near a rigid boundary and
+                        observed that the bubble collapses with a high-speed
+                        liquid jet directed towards the fluid-structure
+                        interface.
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="9">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Gibson et al. (1968)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Conducted experiments near flexible boundaries and
+                        suggested that the physical properties of the boundary
+                        determined the direction of movement of the liquid jet
+                        during the cavitation bubble collapse phase.
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="10">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Plesset et al. (1971)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Predicted Benjamin and Ellis observations theoretically
+                        with help of finite-difference solution. These
+                        predictions are experimentally confirmed by Lauterborn
+                        and Bolle (1975).
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="11">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Chahine et al. (1977)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Carried out a theoretical and experimental study on the
+                        growth and collapse of a cavitation bubble near a free
+                        surface and suggested that when the cavitation bubble
+                        collapses at a sufficient distance away from the free
+                        surface, the free surface also grows and collapses with
+                        the bubble growth and collapse.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section data-name="Motivations" class="below-menubar">
-          motivations
+          <h2 class="topbar-title" style="color: white; margin-bottom: 5px">
+            Motivations
+          </h2>
         </section>
 
         <section data-name="Objectives" class="below-menubar">
