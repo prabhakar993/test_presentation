@@ -371,11 +371,13 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .title-banner {
   background-color: #4c4cd7;
   color: white;
-  /* padding: 20px; */
+  padding: 20px;
   font-size: 1.8rem;
   margin: 0px auto;
+  flex-shrink: 1;
+  border-radius: 20rem;
   /* align-items: center; */
-  width: 80%;
+  /* width: 80%; */
   /* display: flex; */
   justify-content: center;
   align-items: stretch;
@@ -390,19 +392,6 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   flex: 1;
   display: flex;
   /* margin-top: 40px; */
-}
-
-.qr-code {
-  /* float: left; */
-  width: 150px;
-  margin-left: 10%;
-  margin-right: 20px;
-}
-
-.logo-title {
-  display: inline-block;
-  width: 8rem;
-  /* left: -10rem; */
 }
 
 .flex-container {
