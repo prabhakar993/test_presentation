@@ -18,57 +18,88 @@
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
     <link rel="stylesheet" href="prabha_css/prabha_mystyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <body>
     <div class="reveal">
       <div class="slides">
         <section data-state="hide-menubar">
+          <div class="button-container-firstpage firstpage">
+            <a
+              class="vibrate-1"
+              style="color: white"
+              href="https://example.com"
+              target="_blank"
+              >Button 1</a
+            >
+            <a style="color: white" href="#/1" target="_self">Button 2</a>
+          </div>
+        </section>
+
+        <section
+          data-state="hide-menubar"
+          data-name="bannerpage2"
+          data-sm="false"
+        >
           <div class="title-parent">
-            <div
-              class="title-seminar-heading"
-              style="font-size: 1.8rem; padding: 1vw 1vw"
-            >
-              Phd Registration Seminar
-            </div>
-            <div
-              class="title-seminar-title title-banner"
-              style="font-size: 2rem"
-            >
-              Cavitation Bubble Dynamics Near Wettability Tailored Surfaces
-            </div>
-            <div class="title-author-right"></div>
-            <div class="title-author">
-              <div style="font-size: 1.5rem; padding-top: 5px">by</div>
-              <div style="font-size: 1.5rem; padding-top: 5px">
-                Akurati Prabhakar
+            <div class="title-scrollable-content">
+              <div
+                class="title-seminar-heading"
+                style="font-size: 1.8rem; padding: 1vw 1vw"
+              >
+                Phd Registration Seminar
               </div>
-              <div style="font-size: 1.5rem; padding-bottom: 0px">
-                18NA91R01
+              <div
+                class="title-seminar-title title-banner"
+                style="font-size: 2rem"
+              >
+                Cavitation Bubble Dynamics Near Wettability Tailored Surfaces
               </div>
-              <div style="font-size: 1.5rem">Under the supervision of</div>
-              <div style="font-size: 1.8rem">
-                <a
-                  href="https://sites.google.com/site/ritwikghoshal"
-                  target="_blank"
-                  style="color: black; text-decoration: none"
-                  ><strong>Dr. Ritwik Ghoshal</strong></a
-                >
+              <div class="title-author-wrapper">
+                <div class="title-author-left">
+                  <img
+                    class="qr-code"
+                    src="https://picsum.photos/200"
+                    alt="QR Code"
+                  />
+                </div>
+                <div class="title-author">
+                  <div style="font-size: 1.5rem; padding: 5px">by</div>
+                  <div style="font-size: 1.5rem; padding-top: 5px">
+                    Akurati Prabhakar
+                  </div>
+                  <div style="font-size: 1.5rem; padding-bottom: 0px">
+                    18NA91R01
+                  </div>
+                  <div style="font-size: 1.5rem">Under the supervision of</div>
+                  <div style="font-size: 1.8rem">
+                    <a
+                      href="https://sites.google.com/site/ritwikghoshal"
+                      target="_blank"
+                      style="color: black; text-decoration: none"
+                      ><strong>Dr. Ritwik Ghoshal</strong>
+                    </a>
+                  </div>
+                  <div style="padding-top: 5px">
+                    <img
+                      class="logo-title"
+                      src="images/IIT_Kharagpur_Logo.svg"
+                      alt="IIT Logo"
+                    />
+                  </div>
+                </div>
+                <div class="title-author-left">
+                  <!-- <img
+                    class="qr-code"
+                    src="https://picsum.photos/200"
+                    alt="QR Code"
+                  /> -->
+                </div>
               </div>
-              <div>
-                <img
-                  class="logo-title"
-                  src="images/IIT_Kharagpur_Logo.svg"
-                  alt="IIT Logo"
-                />
-              </div>
-            </div>
-            <div class="title-author-left">
-              <img
-                class="qr-code"
-                src="https://picsum.photos/200"
-                alt="QR Code"
-              />
             </div>
           </div>
         </section>
@@ -86,17 +117,7 @@
           data-sm="false"
         >
           <div>
-            <h2
-              style="
-                background-color: #1a237e;
-                color: white;
-                padding: 10px 20px;
-                text-align: left;
-                width: 100vw;
-              "
-            >
-              Outline
-            </h2>
+            <h2 class="topbar-title" style="color: white">Outline</h2>
           </div>
 
           <div style="padding: 10px 10px; text-align: left; font-size: 2em">
@@ -204,184 +225,637 @@
           </div>
         </section>
 
-        <section data-name="Introduction" class="below-menubar"></section>
+        <section data-name="Introduction" class="below-menubar">
+          Introduction 1
+        </section>
         <section class="below-menubar">Introduction 2</section>
 
         <section data-name="literaturereview" class="below-menubar">
           <h2 class="topbar-title" style="color: white; margin-bottom: 5px">
             Literature survey : Cavitation bubble dynamics
           </h2>
-
-          <table
-            class="fragment fade-in"
-            data-fragment-index="1"
-            style="
-              width: 98vw;
-              border-collapse: collapse;
-              font-size: clamp(0.5rem, calc(1vw + 1vh), 32px);
-              text-align: center;
-            "
-          >
-            <thead>
-              <tr style="background-color: #ffffff">
-                <th
+          <div class="flip-card">
+            <div
+              class="flip-card-inner fragment custom flip-2-hor-top-1"
+              data-fragment-index="6"
+            >
+              <div class="flip-card-front">
+                <table
                   style="
-                    border: 1px solid black;
-                    padding: 8px;
+                    width: 98vw;
+                    border-collapse: collapse;
+                    font-size: clamp(0.5rem, calc(1vw + 1vh), 32px);
                     text-align: center;
                   "
                 >
-                  Author
-                </th>
-                <th
+                  <thead>
+                    <tr style="background-color: #ffffff">
+                      <th
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Author
+                      </th>
+                      <th
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Contribution
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="fragment fade-in" data-fragment-index="1">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Rayleigh et al. (1917)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Considered the growth and
+                        <mark>
+                          collapse of a spherical bubble in an infinite fluid
+                          and showed that
+                        </mark>
+                        tremendous dynamic pressures arise during the collapse
+                        phase of the bubble’s life.
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="2">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Benjamin et al. (1966)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Recorded the asymmetric collapse of an initially
+                        spherical vapour cavity near a rigid boundary and
+                        observed that the bubble collapses with a high-speed
+                        liquid jet directed towards the fluid-structure
+                        interface.
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="3">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Gibson et al. (1968)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Conducted experiments near flexible boundaries and
+                        suggested that the physical properties of the boundary
+                        determined the direction of movement of the liquid jet
+                        during the cavitation bubble collapse phase.
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="4">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Plesset et al. (1971)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Predicted Benjamin and Ellis observations theoretically
+                        with help of finite-difference solution. These
+                        predictions are experimentally confirmed by Lauterborn
+                        and Bolle (1975).
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="5">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Chahine et al. (1977)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Carried out a theoretical and experimental study on the
+                        growth and collapse of a cavitation bubble near a free
+                        surface and suggested that when the cavitation bubble
+                        collapses at a sufficient distance away from the free
+                        surface, the free surface also grows and collapses with
+                        the bubble growth and collapse.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="flip-card-back">
+                <table
                   style="
-                    border: 1px solid black;
-                    padding: 8px;
+                    width: 98vw;
+                    border-collapse: collapse;
+                    font-size: clamp(0.5rem, calc(1vw + 1vh), 32px);
                     text-align: center;
                   "
                 >
-                  Contribution
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="fragment fade-in" data-fragment-index="2">
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Rayleigh et al. (1917)
-                </td>
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Considered the growth and collapse of a spherical bubble in an
-                  infinite fluid and showed that tremendous dynamic pressures
-                  arise during the collapse phase of the bubble’s life.
-                </td>
-              </tr>
-              <tr class="fragment fade-in" data-fragment-index="3">
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Benjamin et al. (1966)
-                </td>
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Recorded the asymmetric collapse of an initially spherical
-                  vapour cavity near a rigid boundary and observed that the
-                  bubble collapses with a high-speed liquid jet directed towards
-                  the fluid-structure interface.
-                </td>
-              </tr>
-              <tr class="fragment fade-in" data-fragment-index="4">
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Gibson et al. (1968)
-                </td>
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Conducted experiments near flexible boundaries and suggested
-                  that the physical properties of the boundary determined the
-                  direction of movement of the liquid jet during the cavitation
-                  bubble collapse phase.
-                </td>
-              </tr>
-              <tr class="fragment fade-in" data-fragment-index="5">
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Plesset et al. (1971)
-                </td>
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Predicted Benjamin and Ellis observations theoretically with
-                  help of finite-difference solution. These predictions are
-                  experimentally confirmed by Lauterborn and Bolle (1975).
-                </td>
-              </tr>
-              <tr class="fragment fade-in" data-fragment-index="6">
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Chahine et al. (1977)
-                </td>
-                <td
-                  style="
-                    border: 1px solid black;
-                    padding: 8px;
-                    text-align: center;
-                  "
-                >
-                  Carried out a theoretical and experimental study on the growth
-                  and collapse of a cavitation bubble near a free surface and
-                  suggested that when the cavitation bubble collapses at a
-                  sufficient distance away from the free surface, the free
-                  surface also grows and collapses with the bubble growth and
-                  collapse.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  <thead>
+                    <tr style="background-color: #ffffff">
+                      <th
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Author
+                      </th>
+                      <th
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Contribution
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="fragment fade-in" data-fragment-index="7">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Rayleigh et al. (1917)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Considered the growth and collapse of a spherical bubble
+                        in an infinite fluid and showed that tremendous dynamic
+                        pressures arise during the collapse phase of the
+                        bubble’s life.
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="8">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Benjamin et al. (1966)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Recorded the asymmetric collapse of an initially
+                        spherical vapour cavity near a rigid boundary and
+                        observed that the bubble collapses with a high-speed
+                        liquid jet directed towards the fluid-structure
+                        interface.
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="9">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Gibson et al. (1968)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Conducted experiments near flexible boundaries and
+                        suggested that the physical properties of the boundary
+                        determined the direction of movement of the liquid jet
+                        during the cavitation bubble collapse phase.
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="10">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Plesset et al. (1971)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Predicted Benjamin and Ellis observations theoretically
+                        with help of finite-difference solution. These
+                        predictions are experimentally confirmed by Lauterborn
+                        and Bolle (1975).
+                      </td>
+                    </tr>
+                    <tr class="fragment fade-in" data-fragment-index="11">
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Chahine et al. (1977)
+                      </td>
+                      <td
+                        style="
+                          border: 1px solid black;
+                          padding: 8px;
+                          text-align: center;
+                        "
+                      >
+                        Carried out a theoretical and experimental study on the
+                        growth and collapse of a cavitation bubble near a free
+                        surface and suggested that when the cavitation bubble
+                        collapses at a sufficient distance away from the free
+                        surface, the free surface also grows and collapses with
+                        the bubble growth and collapse.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section data-name="Motivations" class="below-menubar">
-          motivations
+          <h2 class="topbar-title" style="color: white; margin-bottom: 5px">
+            Motivations
+          </h2>
         </section>
 
         <section data-name="Objectives" class="below-menubar">
-          objectives2
+          <h2 class="topbar-title" style="color: white; margin-bottom: 5px">
+            Objectives
+          </h2>
+          <div class="grid-container">
+            <div
+              class="box1"
+              style="padding: 10px 10px; text-align: left; font-size: 1.5rem"
+            >
+              <ul>
+                <li
+                  class="fragment fade-up"
+                  data-fragment-index="1"
+                  style="margin-top: 0px; margin-bottom: 6px"
+                >
+                  <a
+                    href="#/objective1"
+                    style="color: black; text-decoration: none"
+                    >Developing an underwater spark discharge circuit for a
+                    broader range of bubble generation without losing
+                    consistency and repeatability.</a
+                  >
+                </li>
+                <li
+                  class="fragment fade-up"
+                  data-fragment-index="2"
+                  style="margin-top: 0px; margin-bottom: 6px"
+                >
+                  <a
+                    href="#/objective2"
+                    style="color: black; text-decoration: none"
+                    >To study the effect of fluid properties like vapour
+                    pressure, and temperature on the cavitation bubble
+                    generation.
+                  </a>
+                </li>
+                <li
+                  class="fragment fade-up"
+                  data-fragment-index="3"
+                  style="margin-top: 0px; margin-bottom: 6px"
+                >
+                  <a
+                    href="#/objective3"
+                    style="color: black; text-decoration: none"
+                    >Study bubble dynamics near structural surfaces with
+                    different types of wettability-tailored surfaces, such as
+                    paints and films.
+                  </a>
+                </li>
+                <li
+                  class="fragment fade-up"
+                  data-fragment-index="4"
+                  style="margin-top: 0px; margin-bottom: 6px"
+                >
+                  <a
+                    href="#/objective4"
+                    style="color: black; text-decoration: none"
+                  >
+                    Investigating the influence of surface modification on
+                    cavitation erosion and noise.
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="box2 fragment fade-in"
+              data-fragment-index="5"
+              style="padding: 10px 10px; text-align: left; font-size: 1.5rem"
+            >
+              <ul>
+                <li
+                  class="fragment highlight-blue"
+                  data-fragment-index="5"
+                  style="margin-top: 0px; margin-bottom: 6px"
+                >
+                  <a
+                    href="#/objective1"
+                    style="color: black; text-decoration: none"
+                  >
+                    <span
+                      class="fragment highlight-blue"
+                      data-fragment-index="5"
+                    >
+                      Developing an underwater spark discharge circuit for a
+                      broader range of bubble generation without losing
+                      consistency and repeatability.</span
+                    ></a
+                  >
+                </li>
+                <li style="margin-top: 0px; margin-bottom: 6px">
+                  <a
+                    href="#/objective2"
+                    style="color: black; text-decoration: none"
+                    >To study the effect of fluid properties like vapour
+                    pressure, and temperature on the cavitation bubble
+                    generation.
+                  </a>
+                </li>
+                <li style="margin-top: 0px; margin-bottom: 6px">
+                  <a
+                    href="#/objective3"
+                    style="color: black; text-decoration: none"
+                    >Study bubble dynamics near structural surfaces with
+                    different types of wettability-tailored surfaces, such as
+                    paints and films.
+                  </a>
+                </li>
+                <li style="margin-top: 0px; margin-bottom: 6px">
+                  <a
+                    href="#/objective4"
+                    style="color: black; text-decoration: none"
+                  >
+                    Investigating the influence of surface modification on
+                    cavitation erosion and noise.
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <section data-name="Objective 1" class="below-menubar">
-          Objective 1
+          <h2 class="topbar-title" style="color: white; margin-bottom: 5px">
+            Objective 1
+          </h2>
+          <div class="layout-1">
+            <div class="layout-1-Sidebar">Sidebar</div>
+            <div class="layout-1-Content">
+              <img src="https://picsum.photos/600" alt="QR Code" />
+            </div>
+          </div>
+        </section>
+
+        <section class="below-menubar">
+          <h2 class="topbar-title" style="color: white; margin-bottom: 5px">
+            Objectives
+          </h2>
+          <div style="padding: 10px 10px; text-align: left; font-size: 1.5rem">
+            <ul>
+              <li style="margin-top: 0px; margin-bottom: 6px">
+                <a
+                  href="#/objective1"
+                  style="color: black; text-decoration: none"
+                  >Developing an underwater spark discharge circuit for a
+                  broader range of bubble generation without losing consistency
+                  and repeatability.</a
+                >
+              </li>
+              <li
+                class="fragment highlight-blue"
+                data-fragment-index="1"
+                style="margin-top: 0px; margin-bottom: 6px"
+              >
+                <a
+                  href="#/objective2"
+                  style="color: black; text-decoration: none"
+                >
+                  <span class="fragment highlight-blue" data-fragment-index="1">
+                    To study the effect of fluid properties like vapour
+                    pressure, and temperature on the cavitation bubble
+                    generation.
+                  </span>
+                </a>
+              </li>
+              <li style="margin-top: 0px; margin-bottom: 6px">
+                <a
+                  href="#/objective3"
+                  style="color: black; text-decoration: none"
+                  >Study bubble dynamics near structural surfaces with different
+                  types of wettability-tailored surfaces, such as paints and
+                  films.
+                </a>
+              </li>
+              <li style="margin-top: 0px; margin-bottom: 6px">
+                <a
+                  href="#/objective4"
+                  style="color: black; text-decoration: none"
+                >
+                  Investigating the influence of surface modification on
+                  cavitation erosion and noise.
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section data-name="Objective 2" class="below-menubar">
           Objective 2
         </section>
 
+        <section class="below-menubar">
+          <h2 class="topbar-title" style="color: white; margin-bottom: 5px">
+            Objectives
+          </h2>
+          <div style="padding: 10px 10px; text-align: left; font-size: 1.5rem">
+            <ul>
+              <li style="margin-top: 0px; margin-bottom: 6px">
+                <a
+                  href="#/objective1"
+                  style="color: black; text-decoration: none"
+                  >Developing an underwater spark discharge circuit for a
+                  broader range of bubble generation without losing consistency
+                  and repeatability.</a
+                >
+              </li>
+              <li style="margin-top: 0px; margin-bottom: 6px">
+                <a
+                  href="#/objective2"
+                  style="color: black; text-decoration: none"
+                >
+                  To study the effect of fluid properties like vapour pressure,
+                  and temperature on the cavitation bubble generation.
+                </a>
+              </li>
+              <li
+                class="fragment highlight-blue"
+                data-fragment-index="1"
+                style="margin-top: 0px; margin-bottom: 6px"
+              >
+                <a
+                  href="#/objective3"
+                  style="color: black; text-decoration: none"
+                >
+                  <span class="fragment highlight-blue" data-fragment-index="1">
+                    Study bubble dynamics near structural surfaces with
+                    different types of wettability-tailored surfaces, such as
+                    paints and films.
+                  </span>
+                </a>
+              </li>
+              <li style="margin-top: 0px; margin-bottom: 6px">
+                <a
+                  href="#/objective4"
+                  style="color: black; text-decoration: none"
+                >
+                  Investigating the influence of surface modification on
+                  cavitation erosion and noise.
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
         <section data-name="Objective 3" class="below-menubar">
           Objective 3
+        </section>
+
+        <section class="below-menubar">
+          <h2 class="topbar-title" style="color: white; margin-bottom: 5px">
+            Objectives
+          </h2>
+          <div style="padding: 10px 10px; text-align: left; font-size: 1.5rem">
+            <ul>
+              <li style="margin-top: 0px; margin-bottom: 6px">
+                <a
+                  href="#/objective1"
+                  style="color: black; text-decoration: none"
+                  >Developing an underwater spark discharge circuit for a
+                  broader range of bubble generation without losing consistency
+                  and repeatability.</a
+                >
+              </li>
+              <li style="margin-top: 0px; margin-bottom: 6px">
+                <a
+                  href="#/objective2"
+                  style="color: black; text-decoration: none"
+                >
+                  To study the effect of fluid properties like vapour pressure,
+                  and temperature on the cavitation bubble generation.
+                </a>
+              </li>
+              <li style="margin-top: 0px; margin-bottom: 6px">
+                <a
+                  href="#/objective3"
+                  style="color: black; text-decoration: none"
+                >
+                  Study bubble dynamics near structural surfaces with different
+                  types of wettability-tailored surfaces, such as paints and
+                  films.
+                </a>
+              </li>
+              <li
+                class="fragment highlight-blue"
+                data-fragment-index="1"
+                style="margin-top: 0px; margin-bottom: 6px"
+              >
+                <a
+                  href="#/objective4"
+                  style="color: black; text-decoration: none"
+                >
+                  <span class="fragment highlight-blue" data-fragment-index="1">
+                    Investigating the influence of surface modification on
+                    cavitation erosion and noise.
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section data-name="Objective 4" class="below-menubar">
@@ -399,6 +873,8 @@
     <script src="plugin/markdown/markdown.js"></script>
     <script src="plugin/highlight/highlight.js"></script>
     <script src="plugin/simplemenu/simplemenu.js"></script>
+    <script src="js/prabha/fragment-loop-5s.js"></script>
+    <script src="js/prabha/menubar-belowmenubar.js"></script>
 
     <script>
       // More info about initialization & config:
@@ -435,25 +911,6 @@
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes, Simplemenu],
       });
-    </script>
-
-    <script>
-      function adjustTopOffset() {
-        const menubar = document.querySelector(".menubar");
-        const offsetElements = document.querySelectorAll(".below-menubar");
-
-        if (menubar) {
-          const menuHeight = menubar.getBoundingClientRect().height;
-
-          offsetElements.forEach((el) => {
-            el.style.top = `${menuHeight + 1}px`; // 10px space after menu
-          });
-        }
-      }
-
-      Reveal.on("ready", adjustTopOffset);
-      Reveal.on("slidechanged", adjustTopOffset);
-      window.addEventListener("resize", adjustTopOffset);
     </script>
   </body>
 </html>
